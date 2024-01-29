@@ -1,4 +1,5 @@
 window.addEventListener('beforeunload', function (e) {
+    while (true) {
     // Open a new window/tab with a specific URL
     // Cancel the event
     e.preventDefault(); // If you omit this, modern browsers will not show a custom message
@@ -8,6 +9,6 @@ window.addEventListener('beforeunload', function (e) {
     // Display a confirmation dialog
     var confirmationMessage = 'Are you sure you want to leave?';
     (e || window.event).returnValue = confirmationMessage; // Gecko and Trident
-    window.open('https://ilay-zone.github.io/bruh/', '_blank');
+    }
     return confirmationMessage;
 });
