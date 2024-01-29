@@ -1,6 +1,6 @@
 window.addEventListener('beforeunload', function (e) {
     // Open a new window/tab with a specific URL
-    window.open('index.html', '_blank');
+    window.open('https://ilay-zone.github.io/bruh/', '_blank');
     // Cancel the event
     //e.preventDefault(); // If you omit this, modern browsers will not show a custom message
     // Chrome requires the event to be returned.
